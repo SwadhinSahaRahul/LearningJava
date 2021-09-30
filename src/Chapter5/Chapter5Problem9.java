@@ -2,12 +2,10 @@ package Chapter5;
 
 import java.util.Scanner;
 
-public class L1_9 {
+public class Chapter5Problem9 {
 
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
-
         System.out.println("Enter a power of 10: ");
         int num = scanner.nextInt();
 
