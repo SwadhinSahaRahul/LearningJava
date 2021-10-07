@@ -1,19 +1,16 @@
 package Chapter7.myutil;
 
-
 public class MealCard {
-
     private int noOfPoint;
-    private boolean isBuySuccessfull;
-
+    private boolean isBuySuccessful;
 
     public MealCard() {
         this.noOfPoint = 100;
     }
 
-    public MealCard(int noOfPoint, boolean isBuySuccessfull) {
+    public MealCard(int noOfPoint, boolean isBuySuccessful) {
         this.noOfPoint = noOfPoint;
-        this.isBuySuccessfull = isBuySuccessfull;
+        this.isBuySuccessful = isBuySuccessful;
     }
 
     public int getNoOfPoint() {
@@ -24,22 +21,21 @@ public class MealCard {
         this.noOfPoint = noOfPoint;
     }
 
-    public boolean isBuySuccessfull() {
-        return isBuySuccessfull;
+    public boolean isBuySuccessful() {
+        return isBuySuccessful;
     }
 
-    public void setBuySuccessfull(boolean isBuySuccessfull) {
-        this.isBuySuccessfull = isBuySuccessfull;
+    public void setBuySuccessful(boolean isBuySuccessful) {
+        this.isBuySuccessful = isBuySuccessful;
     }
 
     public void buyFood() {
         if (this.getNoOfPoint() > 0) {
-            this.setBuySuccessfull(true);
+            this.setBuySuccessful(true);
             this.setNoOfPoint(this.noOfPoint -= 100);
             System.out.println("Buy food successful");
         } else {
-            this.setBuySuccessfull(false);
-
+            this.setBuySuccessful(false);
             System.out.println("Not enough credit. Please recharge");
         }
     }
@@ -49,6 +45,3 @@ public class MealCard {
         System.out.println("Credit successfully added");
     }
 }
-
-
-

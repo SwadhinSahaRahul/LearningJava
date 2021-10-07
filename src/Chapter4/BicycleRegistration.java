@@ -2,7 +2,7 @@ package Chapter4;
 
 import Chapter4.Classes.Bicycle;
 
-class BicycleThief {
+class BicycleRegistration {
     public static void main(String[] args) {
         Bicycle bicycle1, bicycle2;
         bicycle1 = new Bicycle();

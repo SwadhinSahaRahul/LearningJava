@@ -1,4 +1,4 @@
-package Chapter7.Program13;
+package Chapter7.myutil;
 
 public class Person {
     private String name;

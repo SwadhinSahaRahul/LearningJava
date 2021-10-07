@@ -4,11 +4,11 @@ public class Bicycle {
     private String model;
 
     public Bicycle() {
-        model = "Unknown";
+        this.model = "Unknown";
     }
 
     public String getModel() {
-        return model;
+        return this.model;
     }
 
     public void setModel(String model) {

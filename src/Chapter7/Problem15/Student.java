@@ -1,25 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package Chapter7.myutil;
-
-/**
- *
- * @author Shadesh
- */
+package Chapter7.Problem15;
 
 public class Student extends MealCard {
     private int studentID;
     private String department;
     private MealCard mc;
-    
+
     public Student() {
-        //
     }
-    
-    public Student(int studentID, String department, MealCard mc) { 
+
+    public Student(int studentID, String department, MealCard mc) {
         this.studentID = studentID;
         this.department = department;
         this.mc = mc;
