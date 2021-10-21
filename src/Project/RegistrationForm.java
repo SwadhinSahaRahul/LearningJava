@@ -43,7 +43,7 @@ public class RegistrationForm extends JFrame implements ActionListener {
 		setBounds(200,10,1020,725);
 		//setDefaultCloseOperation(EXIT_ON_CLOSE);
 		
-		head=new JLabel("Kuet Medical Center,Khulna");
+		head=new JLabel("JU Medical Center, JU");
 		head.setFont(new Font("arial narrow", Font.BOLD, 30));
 		head.setForeground(Color.green);
 		head.setHorizontalAlignment(SwingConstants.CENTER);

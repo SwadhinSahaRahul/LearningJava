@@ -43,7 +43,7 @@ public class OutRecord extends JFrame implements ActionListener {
     	setDefaultCloseOperation(EXIT_ON_CLOSE);
     	setBounds(200,10,1020,725);
     	
-    	head=new JLabel("KUET MEDICAL CENTER,KUET");
+    	head=new JLabel("JU MEDICAL CENTER, JU");
     	head.setFont(new Font("arial", Font.BOLD,40 ));
   	    head.setForeground(Color.green);
   	    head.setHorizontalAlignment(SwingConstants.CENTER);

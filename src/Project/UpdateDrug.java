@@ -273,7 +273,7 @@ public class UpdateDrug extends JFrame implements ActionListener {
 
                 } catch (SQLException e1) {
                     // TODO Auto-generated catch block
-                    JOptionPane.showMessageDialog(null, "this medicane is not found", "not found", JOptionPane.PLAIN_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "this medicine is not found", "not found", JOptionPane.PLAIN_MESSAGE);
                     e1.printStackTrace();
                 }
 
@@ -293,7 +293,7 @@ public class UpdateDrug extends JFrame implements ActionListener {
 //			mfgdate=dexda3.getText();
 //			expdate=dexda4.getText();
             java.util.Date date = (java.util.Date) datePicker.getModel().getValue();
-            SimpleDateFormat dateFormat1 = new SimpleDateFormat("dd-mm-yyyy");
+            SimpleDateFormat dateFormat1 = new SimpleDateFormat("dd-MM-yyyy");
             date1 = dateFormat1.format(date);
             //date1=date.toString();
             //String date=
@@ -326,8 +326,6 @@ public class UpdateDrug extends JFrame implements ActionListener {
                     // TODO Auto-generated catch block
                     e1.printStackTrace();
                 }
-
-
             } catch (ClassNotFoundException e1) {
                 // TODO Auto-generated catch block
                 e1.printStackTrace();

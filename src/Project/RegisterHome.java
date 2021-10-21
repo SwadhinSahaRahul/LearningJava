@@ -24,7 +24,7 @@ public class RegisterHome extends JFrame implements ActionListener {
 		setTitle("Registration of Patient");
 		setBounds(200,10,1020,725);
 		
-		head=new JLabel("Kuet Medical Center,Kuet");
+		head=new JLabel("JU Medical Center, JU");
 		head.setFont(new Font("arail narrow", Font.ITALIC, 36));
 		head.setForeground(Color.green);
 		head.setHorizontalAlignment(SwingConstants.CENTER);

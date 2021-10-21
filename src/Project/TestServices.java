@@ -41,7 +41,7 @@ public class TestServices extends JFrame implements ActionListener {
         setTitle("");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setBounds(200, 10, 1020, 725);
-        stop = new JLabel("KUET Medical Center,KUET");
+        stop = new JLabel("JU Medical Center, JU");
         stop.setFont(new Font("Arial Narrow", Font.BOLD, 24));
         stop.setForeground(new Color(255, 51, 255));
         stop.setHorizontalAlignment(SwingConstants.CENTER);

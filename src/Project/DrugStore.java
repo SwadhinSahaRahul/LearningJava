@@ -30,7 +30,7 @@ public class DrugStore extends JFrame implements ActionListener {
 
         ima = new JLabel(" ");
         ima.setFont(new Font("arial", Font.BOLD, 35));
-        ima.setIcon(new ImageIcon("G:\\java programming\\PC\\workspace\\images1.jpg"));
+        ima.setIcon(new ImageIcon("/resources/images1.jpg"));
 		ima.setBounds(290, 210, 450, 360);
         ima.setHorizontalAlignment(SwingConstants.CENTER);
         //getContentPane().add(ima);
@@ -56,7 +56,6 @@ public class DrugStore extends JFrame implements ActionListener {
         updrug.setToolTipText("Press to update the drugs");
         updrug.setHorizontalAlignment(SwingConstants.CENTER);
         updrug.addActionListener(this);
-        //getContentPane().add(updrug);
         backgroundContainer.add(updrug);
 
 

@@ -9,7 +9,7 @@ import java.awt.event.KeyEvent;
 public class Home extends JFrame implements ActionListener {
 
     JButton aboutHealthCare, mts, ultraSound, xRay, bioChemical, register, drugStore, lumberRoom, wards, other, exit;
-    JLabel kuetHc, homePage, image;
+    JLabel juHc, homePage, image;
     BackgroundContainer backgroundContainer;
 
     public Home() {
@@ -29,13 +29,13 @@ public class Home extends JFrame implements ActionListener {
         panel.setPreferredSize(new Dimension(1020, 725));
         //panel.setBackground(Color.green);
 
-        kuetHc = new JLabel("JU Medical Center");
-        kuetHc.setFont(new Font("arial", Font.BOLD, 45));
-        kuetHc.setForeground(Color.gray);
-        kuetHc.setHorizontalAlignment(SwingConstants.CENTER);
-        kuetHc.setBounds(120, 20, 780, 70);
-        //panel.add(kuetHc);
-        backgroundContainer.add(kuetHc);
+        juHc = new JLabel("JU Medical Center");
+        juHc.setFont(new Font("arial", Font.BOLD, 45));
+        juHc.setForeground(Color.gray);
+        juHc.setHorizontalAlignment(SwingConstants.CENTER);
+        juHc.setBounds(120, 20, 780, 70);
+        //panel.add(juHc);
+        backgroundContainer.add(juHc);
 
         homePage = new JLabel("Home Page");
         homePage.setFont(new Font("Arial Narrow", Font.BOLD, 35));
