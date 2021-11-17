@@ -247,18 +247,16 @@ public class OutRecord extends JFrame implements ActionListener {
 					pdiag=dtext.getText();
 					//System.out.println(bgroup.getSelection().getActionCommand());
 					PreparedStatement stmt=(PreparedStatement) conn.prepareStatement("insert into registerout  values(?,?,?,?,?,?,?)");
-					
-					stmt.setString(1, pname);
-					stmt.setInt(2, page);
-					stmt.setInt(3, popno);
-					stmt.setString(4, pdate);
-					stmt.setString(5, psex);
+
+					stmt.setInt(1, popno);
+					stmt.setString(2, pname);
+					stmt.setInt(3, page);
+					stmt.setString(4, psex);
 					stmt.setString(6, poccu);
+					stmt.setString(5, pdate);
 					stmt.setString(7, pdiag);
 					
 					stmt.executeUpdate();
-					
-					
 					stmt.close();
 					conn.close();
 					JOptionPane.showMessageDialog(null, "Registration successful"," ",JOptionPane.INFORMATION_MESSAGE);

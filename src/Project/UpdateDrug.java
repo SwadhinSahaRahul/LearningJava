@@ -236,28 +236,20 @@ public class UpdateDrug extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
-
         UpdateDrug updateDrug = new UpdateDrug();
-
-
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        // TODO Auto-generated method stub
         if (e.getActionCommand().equals("BACK")) {
             dispose();
         } else if (e.getActionCommand().equals("DETAILS")) {
             try {
                 Class.forName("com.mysql.jdbc.Driver");
-
-
                 try {
                     Connection conn = DriverManager.getConnection(DB_URL, userName, user_Password);
-
                     drugnname = drugTextField1.getText();
-                    PreparedStatement stmt = conn.prepareStatement("select total,mfgdate,expdate from drugs where drugname=?");
+                    PreparedStatement stmt = conn.prepareStatement("select total, mfgdate, expdate from drugs where drugname=?");
 
                     stmt.setString(1, drugnname);
                     ResultSet rSet = stmt.executeQuery();
@@ -282,10 +274,7 @@ public class UpdateDrug extends JFrame implements ActionListener {
                 // TODO Auto-generated catch block
                 e1.printStackTrace();
             }
-
-
         } else if (e.getActionCommand().equals("SUBMIT")) {
-
             drugnname = drugTextField2.getText();
             inStock = total;
             inStock = Integer.parseInt(drugInstockTextField.getText());
@@ -316,28 +305,22 @@ public class UpdateDrug extends JFrame implements ActionListener {
                     stmt.setString(4, date2);
                     stmt.setInt(5, total);
                     stmt.executeUpdate();
-                    conn.commit();
+//                    conn.commit();
                     stmt.close();
 
                     conn.close();
-                    //JOptionPane.showMessageDialog(null, "Drug is updated","Successfull",JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Drug is updated", "Successful", JOptionPane.INFORMATION_MESSAGE);
 
                 } catch (SQLException e1) {
-                    // TODO Auto-generated catch block
                     e1.printStackTrace();
                 }
             } catch (ClassNotFoundException e1) {
-                // TODO Auto-generated catch block
                 e1.printStackTrace();
             }
-
-
         }
-
     }
 
     class BackgroundContainer extends JPanel {
-
         private final Image image;
 
         public BackgroundContainer() {
@@ -346,10 +329,8 @@ public class UpdateDrug extends JFrame implements ActionListener {
 
         @Override
         protected void paintComponent(Graphics arg0) {
-            // TODO Auto-generated method stub
             super.paintComponent(arg0);
             arg0.drawImage(image, 0, 0, getSize().width, getSize().height, this);
         }
     }
-
 }

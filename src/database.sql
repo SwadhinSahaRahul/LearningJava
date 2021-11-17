@@ -51,3 +51,15 @@ create table inpacaserec
     physicalexamination varchar(255)             null,
     investigation       varchar(255)             null
 );
+
+drop table registerout;
+create table registerout
+(
+    opno       varchar(255) primary key not null,
+    name       varchar(255)             not null,
+    age        int                      not null,
+    sex        varchar(255)             not null,
+    occupation varchar(255)             null,
+    doa        varchar(255)             null,
+    diagnosis  varchar(255)             null
+);

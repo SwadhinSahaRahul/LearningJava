@@ -16,7 +16,7 @@ import java.sql.SQLException;
 public class InRecord extends JFrame implements ActionListener {
     static final String JDBC_URL = "com.mysql.jdbc.Driver";
     static final String DB_URL = "jdbc:mysql://localhost:3306/health_care_management?autoReconnect=true&useSSL=false";
-    static final String userName = "root";
+    static final String userName = "r0oot";
     static final String user_Password = "1";
 
 
@@ -330,11 +330,11 @@ public class InRecord extends JFrame implements ActionListener {
                     pi = ai.getText();
 
                     PreparedStatement psms = (PreparedStatement) conn.prepareStatement("insert into inpacaserec values(?,?,?,?,?,?,?,?,?,?,?,?)");
-                    psms.setString(1, pname);
-                    psms.setInt(2, page);
-                    psms.setString(3, psex);
-                    psms.setString(4, poccu);
-                    psms.setInt(5, popno);
+                    psms.setString(2, pname);
+                    psms.setInt(3, page);
+                    psms.setString(4, psex);
+                    psms.setString(5, poccu);
+                    psms.setInt(1, popno);
                     psms.setString(6, date1);
                     psms.setString(7, date2);
                     psms.setString(8, pdia);

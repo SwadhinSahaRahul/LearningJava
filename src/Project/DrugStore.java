@@ -31,7 +31,7 @@ public class DrugStore extends JFrame implements ActionListener {
         ima = new JLabel(" ");
         ima.setFont(new Font("arial", Font.BOLD, 35));
         ima.setIcon(new ImageIcon("/resources/images1.jpg"));
-		ima.setBounds(290, 210, 450, 360);
+        ima.setBounds(290, 210, 450, 360);
         ima.setHorizontalAlignment(SwingConstants.CENTER);
         //getContentPane().add(ima);
         backgroundContainer.add(ima);
@@ -107,19 +107,14 @@ public class DrugStore extends JFrame implements ActionListener {
 
         } else if (e.getActionCommand().equals("About Stock")) {
             AboutStock aStock = new AboutStock();
-
         }
-
     }
 
     class BackgroundContainer extends JPanel {
-
         private final Image image;
-
         public BackgroundContainer() {
             image = (new ImageIcon(DrugStore.class.getResource("/resources/image8.jpg"))).getImage();
         }
-
         @Override
         protected void paintComponent(Graphics arg0) {
             // TODO Auto-generated method stub
